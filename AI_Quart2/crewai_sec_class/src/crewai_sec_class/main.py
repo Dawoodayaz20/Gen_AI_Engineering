@@ -16,7 +16,7 @@ class ExampleFlow(Flow):
         response = completion(
             model=self.model,
             messages=[
-                {
+                { 
                     "role": "user",
                     "content": "Return the name of a random city in the world.",
                 },

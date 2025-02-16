@@ -1,0 +1,18 @@
+[project]
+name = "uv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.70.1",
+    "litellm>=1.30.7",
+    "streamlit>=1.32.0",
+]
+
+[project.scripts]
+uv = "uv.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build" 

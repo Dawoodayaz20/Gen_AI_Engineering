@@ -1,11 +1,13 @@
 [project]
-name = "crewai_sec_class"
+name = "uv-city-facts"
 version = "0.1.0"
-description = "crewai_sec_class using crewAI"
+description = "A UV project that generates random city facts using LLMs"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<3.13"
 dependencies = [
-    "crewai[tools]>=0.100.1,<1.0.0",
+    "crewai",
+    "python-dotenv",
+    "litellm",
 ]
 
 [project.scripts]
@@ -19,3 +21,6 @@ build-backend = "hatchling.build"
 
 [tool.crewai]
 type = "flow"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
