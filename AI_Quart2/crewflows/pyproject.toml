@@ -1,20 +1,19 @@
 [project]
-name = "projectaiagent"
+name = "crewflows"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Ch_Dawood Ayaz", email = "dawoodayaz18@gmail.com" }
+    { name = "Dawood Ayaz", email = "dawoodayaz18@gmail.com" }
 ]
 requires-python = ">=3.11"
 dependencies = [
-    "crewai>=0.100.1",
-    "litellm>=1.59.8",
+    "crewai>=0.102.0",
+    "crewai-tools>=0.36.0",
 ]
 
 [project.scripts]
-projectkickoff = "projectaiagent.main:kickoff"
-projectkickoff2 = "projectaiagent.main2:kickoff"
+crewflows = "crewflows:main"
 
 [build-system]
 requires = ["hatchling"]

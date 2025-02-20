@@ -12,6 +12,7 @@ dependencies = [
 
 [project.scripts]
 uv = "uv.main:main"
+uv2 = "uv.main2:kickoff"
 
 [build-system]
 requires = ["hatchling"]
